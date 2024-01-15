@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+    <div class = "dealer" id = "dealer">
+        <label>Dealer's card</label>
+        <br> 
+        {% for img_url, des in dealer_img %}
+            <img class="player_card_img" src="{{ img_url }}" alt = "{{ des }}" width="70">
+        {% endfor %}
+    </div>
+                
+    <label id = "round_message">...</label>
+
+    <div class = "player" id = "player">
+        <label>Player's card</label>
+        <br>
+        {% for img_url, des in player_img %}
+            <img class="player_card_img" src="{{ img_url }}" alt = "{{ des }}" width="70">
+        {% endfor %}
+    </div>
+
+    <div class = "buttons">
+        <button id = "deal_button" class = "player_buttons" onclick = "deal()">Deal</button>
+        <button id = "hold_button" class = "player_buttons" onclick = "hold()">Hold</button>
+    </div>
+
+

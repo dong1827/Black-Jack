@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename = 'general.css') }}">
+        
+        <title>Small RPG</title>
+    </head>
+    <body>
+        <label id = "message" title = "Message">{{ message }}</label>
+
+        <div class = "login-box" id = "login-div"> 
+            <form id="login" action = "/login" method = "post"> 
+                <label id = "label1" for = "username" title = "Enter your username">Username: </label><br>
+                <input type = "text" id = "username" name = "username" form = "login", class = "space-at-bottom"><br>
+                <label for = "password" title = "Enter your password">Password: </label><br>
+                <input type = "password" id = "password" name = "password" form = "login" class = "space-at-bottom"><br> 
+                <button id = "login-button" class = "space-at-bottom" onclick = "submitLogin()">Login</button>
+            </form>
+            
+            <button id = "register-button" onclick = "showRegister()">Register</button>
+        </div>
+
+
+        <script src = "{{ url_for('static', filename='general.js') }}"></script>
+    </body>
+</html>

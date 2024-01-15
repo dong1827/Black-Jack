@@ -1,0 +1,27 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#message {
+    font-size: 16px;
+}
+
+.space-at-bottom {
+    margin-bottom: 10px;
+}
+
+
+.login-box {
+    width: 250px;
+    height: 180px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.register-box {
+    width: 250px;
+    height: 220px;
+    border: 1px solid black;
+    margin: auto;
+}

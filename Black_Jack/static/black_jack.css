@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.display {
+    margin-top: 15px;
+    height: 80%;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+}
+
+.buttons {
+    border: 2px solid;
+    border-color: red;
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+}
+
+.player_buttons {
+    width: 15%;
+    height: 80%;
+    margin: 5px 10%;
+    font-size: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+#points {
+    position: absolute;
+    right: 0;
+}

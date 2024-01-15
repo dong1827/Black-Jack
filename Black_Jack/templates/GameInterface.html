@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename = 'black_jack.css') }}">
+        <title>Black Jack</title>
+    </head>
+    <body>
+        <h1>Welcome, {{ user }}</h1>
+        <label id = "points">Current points: {{ points }}</label>
+        <div class = "display" id = "display">
+            <div class = "start">
+                <label>Ready to start?</label>
+                <br> 
+                <button id= "start_button" onclick = "initialize_game()">Start</button>
+            </div>
+            
+        </div>
+
+        
+        <script src = "{{ url_for('static', filename='black_jack.js') }}"></script>
+    </body>
+</html>

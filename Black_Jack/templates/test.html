@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename = 'black_jack.css') }}"> --> 
+        <link rel = "stylesheet" type = "text/css" href = "../static/black_jack.css">
+        <title>Black Jack</title>
+    </head>
+
+    <body>
+        <h1>Welcome, {{ user }}</h1>
+        <label id = "points">Current points: {{ points }}</label>
+            <div class = "display"> 
+                <div class = "dealer">
+                    <label>Dealer's card</label>
+                    <br> 
+                    <label>PlaceHolder</label>
+                </div>
+                
+                <label id = "round_message">...</label>
+
+                <div class = "player">
+                    <label>Player's card</label>
+                    <br>
+                    <label>PlaceHolder</label>
+                </div>
+                
+                <div class = "buttons">
+                    <button id = "deal_button" class = "player_buttons" onclick = "deal()">Deal</button>
+                    <button id = "quit_button" class = "player_buttons" onclick = "quit()">Quit</button>
+                </div>
+            </div>
+
+            
+    </body>
+</html>
